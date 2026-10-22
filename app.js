@@ -32,7 +32,7 @@ const APP_KEY = "healthconnect_app_v1";
    HEALTHCONNECT BACKEND API HELPERS
 ========================================================= */
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://healthconnect-uglg.onrender.com/api";
 
 async function apiRequest(method, path, body) {
     const token = localStorage.getItem("hc_token");
