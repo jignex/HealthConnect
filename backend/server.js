@@ -50,6 +50,6 @@ app.get("/api/test-auth", authenticateToken, (req, res) => {
         user: req.user
     });
 });
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`HealthConnect API running on port ${PORT}`);
 });
